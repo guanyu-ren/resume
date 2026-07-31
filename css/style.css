@@ -1,0 +1,19 @@
+/* 链接去下划线 + 自动换行，防止长 URL 撑出横向滚动条 */
+a {
+    text-decoration: none;
+    word-break: break-all;
+}
+
+/* 头像：固定尺寸 + 圆形裁剪 */
+.avatar {
+    max-width: 140px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    clip-path: circle(46% at 50% 50%);
+}
+
+@media (max-width: 576px) {
+    .avatar {
+        max-width: 100px;
+    }
+}
